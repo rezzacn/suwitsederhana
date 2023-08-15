@@ -43,14 +43,32 @@ function getHasil(comp, player) {
 const pilihan = document.querySelectorAll('li img');
 pilihan.forEach(function (plh) {
   plh.addEventListener('click', function () {
-    const pilihanKomputer = getPilihanKomputer();
-    const pilihanPlayer = plh.className;
-    const hasil = getHasil(pilihanKomputer, pilihanPlayer);
+    const AudioClick = new Audio('sound/click.mp3');
+    AudioClick.play();
 
-    const imgComp = document.querySelector('.area-komputer img');
-    imgComp.setAttribute('src', `img/${pilihanKomputer}.png`);
+    // Tambahkan delay antara audio click dan audio hasil
+    setTimeout(function () {
+      const pilihanKomputer = getPilihanKomputer();
+      const pilihanPlayer = plh.className;
+      const hasil = getHasil(pilihanKomputer, pilihanPlayer);
 
-    const imgHasil = document.querySelector('.area-hasil img');
-    imgHasil.setAttribute('src', `img/${hasil}.png`);
+      const imgComp = document.querySelector('.area-komputer img');
+      imgComp.setAttribute('src', `img/${pilihanKomputer}.png`);
+
+      const imgHasil = document.querySelector('.area-hasil img');
+      imgHasil.setAttribute('src', `img/${hasil}.png`);
+
+      // Memutarkan suara sesuai hasil
+      const audio = new Audio();
+
+      if (hasil === 'menang') {
+        audio.src = 'sound/win.mp3';
+      } else if (hasil === 'kalah') {
+        audio.src = 'sound/lose.mp3';
+      } else if (hasil == 'seri') {
+        audio.src = 'sound/draw.mp3';
+      }
+      audio.play();
+    }, 1000); // Delay dalam milidetik (1000 ms = 1 detik)
   });
 });
