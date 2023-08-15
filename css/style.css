@@ -1,0 +1,82 @@
+body {
+  background-color: #004643;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  justify-content: center;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+  color: gainsboro;
+  font-size: 40px;
+  text-shadow: 1.5px 1.5px 0 #333, 0px 1.5px 0 #333, -1.5px -1.5px 0 #333, -1.5px -1.5px 0 #333, -1.5px 1.5px 0 #333, 1.5px -1.5px 0 #333, 0.7778174593px 0.7778174593px 0 #aaaaaa, 1.5556349186px 1.5556349186px 0 #aaaaaa,
+    2.3334523779px 2.3334523779px 0 #aaaaaa, 3.1112698372px 3.1112698372px 0 #aaaaaa, 3.8890872965px 3.8890872965px 0 #aaaaaa, 4.6669047558px 4.6669047558px 0 #aaaaaa, 5.4447222151px 5.4447222151px 0 #aaaaaa;
+}
+
+h3 {
+  color: #001e1d;
+  font-weight: bold;
+}
+
+.container {
+  width: 600px;
+  margin: auto;
+  padding: 10px;
+  background-color: #abd1c6;
+  border-radius: 40px;
+  box-sizing: border-box;
+}
+
+.area-komputer {
+  margin: 5px auto;
+  padding: 10px;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+}
+
+.area-komputer img {
+  position: relative;
+  width: 20%;
+}
+
+.area-player {
+  margin: 5px auto;
+  padding: 10px;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+}
+
+.area-player img {
+  position: relative;
+  width: 50%;
+}
+
+.area-player img:hover {
+  cursor: pointer;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-right: 10px;
+}
+
+.area-hasil {
+  margin: 5px auto;
+  padding: 10px;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+}
+
+.area-hasil img {
+  width: 20%;
+  position: relative;
+}

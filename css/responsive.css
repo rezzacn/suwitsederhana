@@ -1,0 +1,26 @@
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 907px) {
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    width: 70%;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
